@@ -18,6 +18,10 @@ const expenseReducer = (state = INITIAL_STATE, action) => {
             return Object.assign({}, state, {
                 expenses: state.expenses.filter((i) => i !== action.payload)
             });
+    case 'SET_TOTAL_MONTH':      
+            return Object.assign({}, state, {
+                total_month: action.payload
+            });
     default:
       return state;
   }

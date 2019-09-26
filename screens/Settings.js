@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, ScrollView, TouchableOpacity, Dimensions, StatusBar, Text, Picker } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Header } from 'react-navigation';
+import { Header } from 'react-navigation-stack';
 import AsyncStorage from '@react-native-community/async-storage';
 import {setDate} from './ExpenseActions';
 import { connect } from 'react-redux';

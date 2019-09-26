@@ -5,9 +5,9 @@ const db = SQLite.openDatabase("expenses.db", '1.0', '', 1);
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import expenseReducer from './screens/ExpenseReducer';
-import { useScreens } from 'react-native-screens';
+//import { useScreens } from 'react-native-screens';
 
-useScreens();
+//useScreens();
 
 const store = createStore(expenseReducer);
 

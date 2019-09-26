@@ -26,3 +26,10 @@ export const setDate = date => (
     payload: date
   }
 )
+
+export const setTotalMonth = total => (
+  {
+    type: 'SET_TOTAL_MONTH',
+    payload: total
+  }
+)

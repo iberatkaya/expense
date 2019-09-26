@@ -1,8 +1,9 @@
-import {createStackNavigator, createAppContainer, createDrawerNavigator, DrawerItems} from 'react-navigation';
+import { createAppContainer} from 'react-navigation';
+import { Header, createStackNavigator} from 'react-navigation-stack';
+import { createDrawerNavigator, DrawerNavigatorItems} from 'react-navigation-drawer';
 import React from 'react';
 import { View, Text, ScrollView, Image, Dimensions, StatusBar, TouchableOpacity, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Header } from 'react-navigation';
 import HomeScreen from './screens/Home';
 import AddExpScreen from './screens/AddExp';
 import HistoryScreen from './screens/History';
@@ -64,7 +65,7 @@ const Draw = createDrawerNavigator({
               style={{ width: width * 0.8, height: height * 0.28 }}
             />
           </View>
-          <DrawerItems {...props} />
+          <DrawerNavigatorItems {...props} />
           <TouchableOpacity
             style={{ paddingLeft: 17, paddingBottom: 13, paddingTop: 10 }}
             onPress={() => { Linking.openURL("mailto:ibraberatkaya@gmail.com?subject=Feedback"); }}

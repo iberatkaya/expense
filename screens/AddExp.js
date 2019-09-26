@@ -3,7 +3,7 @@ import {View, Text, ScrollView, TouchableOpacity, Dimensions, StatusBar, ToastAn
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Select from 'react-native-picker-select';
 import t from 'tcomb-form-native';
-import {Header} from 'react-navigation';
+import {Header} from 'react-navigation-stack';
 import AsyncStorage from '@react-native-community/async-storage';
 import moment  from 'moment';
 const Form = t.form.Form;
@@ -149,7 +149,7 @@ class AddExp extends React.Component{
                             marginTop: 10,
                             marginBottom: 16,
                             alignSelf: 'center',
-                            borderRadius: 12,
+                            borderRadius: 16,
                             backgroundColor: '#f0f0f0',
                             width: width * 0.8
                         }}
